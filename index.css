@@ -1,0 +1,109 @@
+* {
+    margin: 0;
+    padding: 0;
+    box-sizing: border-box;
+}
+
+body {
+    background-color: #dc06ca;
+    color: #ffffff;
+    font-family: 'Poppins', sans-serif;
+    overflow: hidden;
+}
+
+/* --- TELA INICIAL --- */
+#tela-inicial {
+    height: 100vh;
+    display: flex;
+    justify-content: center;
+    align-items: center;
+    background: radial-gradient(circle, #c60ac0 0%, #000000 100%);
+    transition: all 0.8s ease;
+}
+
+.hero-content { text-align: center; }
+
+.titulo-entrada {
+    font-family: 'Supermercado One', cursive;
+    font-size: clamp(3rem, 10vw, 5rem);
+    background: linear-gradient(to right, #fff, #888);
+    -webkit-background-clip: text;
+    -webkit-text-fill-color: transparent;
+    margin-bottom: 10px;
+}
+
+.btn-iniciar {
+    margin-top: 30px;
+    padding: 15px 40px;
+    background: transparent;
+    color: white;
+    border: 1px solid #ffffff44;
+    border-radius: 50px;
+    cursor: pointer;
+    letter-spacing: 2px;
+    transition: 0.3s;
+}
+
+.btn-iniciar:hover {
+    background: white;
+    color: black;
+    box-shadow: 0 0 20px rgba(255, 255, 255, 0.3);
+}
+
+/* --- GALERIA --- */
+#galeria-principal {
+    height: 100vh;
+    padding: 40px 20px;
+    transition: opacity 1s ease;
+    opacity: 0;
+    display: flex;
+    flex-direction: column;
+}
+
+.hidden { display: none !important; }
+
+nav {
+    display: flex;
+    justify-content: space-between;
+    align-items: center;
+    max-width: 1000px;
+    width: 100%;
+    margin: 0 auto 30px;
+}
+
+.container {
+    flex: 1;
+    display: flex;
+    flex-direction: column;
+    justify-content: center;
+    align-items: center;
+}
+
+#frase {
+    font-family: 'Supermercado One';
+    font-size: clamp(1.5rem, 5vw, 2.5rem);
+    margin-bottom: 30px;
+    transition: opacity 0.4s ease;
+}
+
+.canvas-foto {
+    background: #1a1a1a;
+    padding: 12px;
+    border-radius: 20px;
+    box-shadow: 0 30px 60px rgba(0,0,0,0.5);
+    text-align: center;
+}
+
+img {
+    width: 100%;
+    max-width: 500px;
+    aspect-ratio: 1/1;
+    object-fit: cover;
+    border-radius: 12px;
+    cursor: pointer;
+    transition: all 0.4s ease;
+}
+
+
+
+.btn-voltar { background: none; border: none; color: #ffffff; cursor: pointer; }
