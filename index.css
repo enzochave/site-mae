@@ -9,7 +9,7 @@ body {
     color: #ffffff;
     font-family: 'Poppins', sans-serif;
 
-    /* LIBERA O SCROLL */
+    /* LIBERA SCROLL */
     overflow-x: hidden;
     overflow-y: auto;
 }
@@ -69,14 +69,12 @@ body {
 
     transform: scale(1.05);
 
-    box-shadow: 0 0 20px rgba(255, 255, 255, 0.3);
+    box-shadow: 0 0 20px rgba(255,255,255,0.3);
 }
 
 /* ---------------- GALERIA ---------------- */
 
 #galeria-principal {
-
-    /* AGORA PODE CRESCER */
     min-height: 100vh;
 
     padding: 40px 20px;
@@ -106,6 +104,7 @@ nav {
 
 .logo {
     font-size: 2rem;
+
     font-family: 'Supermercado One', cursive;
 }
 
@@ -132,7 +131,6 @@ nav {
     display: flex;
     flex-direction: column;
 
-    /* LIBERA O CONTEÚDO PRA DESCER */
     justify-content: flex-start;
 
     align-items: center;
@@ -147,10 +145,12 @@ nav {
 
     margin-bottom: 30px;
 
-    transition: opacity 0.4s ease;
-
     text-align: center;
+
+    transition: opacity 0.4s ease;
 }
+
+/* ---------------- FOTO ---------------- */
 
 .canvas-foto {
     background: #1a1a1a;
@@ -217,7 +217,7 @@ img:hover {
     box-shadow: 0 15px 40px rgba(0,0,0,0.4);
 }
 
-/* ---------------- ANIMAÇÕES ---------------- */
+/* ---------------- ANIMAÇÃO ---------------- */
 
 @keyframes aparecerSpotify {
 
