@@ -4,35 +4,91 @@
     <meta charset="UTF-8">
     <meta name="viewport" content="width=device-width, initial-scale=1.0">
     <title>Fotografia Premium</title>
+
     <link rel="preconnect" href="https://fonts.googleapis.com">
+
     <link href="https://fonts.googleapis.com/css2?family=Supermercado+One&family=Poppins:wght@300;600&display=swap" rel="stylesheet">
+
     <link rel="stylesheet" href="index.css">
 </head>
+
 <body>
 
+    <!-- TELA INICIAL -->
     <section id="tela-inicial">
+
         <div class="hero-content">
-            <h1 class="titulo-entrada">Site Dias das Mães</h1>
+
+            <h1 class="titulo-entrada">
+                Site Dias das Mães
+            </h1>
+
             <p>Coleção de foto com a Mãe</p>
-            <button class="btn-iniciar" onclick="começarGaleria()">Explorar Galeria</button>
+
+            <button class="btn-iniciar" onclick="começarGaleria()">
+                Explorar Galeria
+            </button>
+
         </div>
+
     </section>
 
+    <!-- GALERIA -->
     <main id="galeria-principal" class="hidden">
+
         <nav>
+
             <h2 class="logo">Galeria</h2>
-            <button class="btn-voltar" onclick="voltarInicio()">← Sair</button>
+
+            <button class="btn-voltar" onclick="voltarInicio()">
+                ← Sair
+            </button>
+
         </nav>
-        
+
         <div class="container">
-            <h1 id="frase">Carregando momentos...</h1>
+
+            <h1 id="frase">
+                Carregando momentos...
+            </h1>
+
+            <!-- FOTO -->
             <div class="canvas-foto">
-                <img id="imagem" src="sua-foto-1.jpg" alt="Foto" onclick="proximaFoto()">
-                <div class="click-hint">Clique na foto para avançar</div>
+
+                <img
+                    id="imagem"
+                    src="foto1.jpeg"
+                    alt="Foto"
+                    onclick="proximaFoto()"
+                >
+
+                <div class="click-hint">
+                    Clique na foto para avançar
+                </div>
+
             </div>
+
+            <!-- SPOTIFY -->
+            <div class="spotify-player">
+
+                <iframe
+                    style="border-radius:12px"
+                    src="https://open.spotify.com/embed/track/1LsHvezyd3zvsjleB1GYVc?utm_source=generator"
+                    width="100%"
+                    height="152"
+                    frameBorder="0"
+                    allowfullscreen=""
+                    allow="autoplay; clipboard-write; encrypted-media; fullscreen; picture-in-picture"
+                    loading="lazy">
+                </iframe>
+
+            </div>
+
         </div>
+
     </main>
 
     <script src="index.js"></script>
+
 </body>
 </html>
